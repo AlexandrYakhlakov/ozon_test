@@ -15,6 +15,6 @@ def driver(request):
         driver = webdriver.Firefox()
     elif driver == 'opera':
         driver = webdriver.Opera()
-    driver.implicitly_wait(15)
+    driver.implicitly_wait(5)
     yield driver
     driver.quit()
